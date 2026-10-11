@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c1a4d 0%, #4a2c8a 100%);
+}
+
+.calculadora {
+  background: #1e1e2e;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  width: 340px;
+}
+
+.display {
+  background: #12121c;
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: right;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  min-height: 90px;
+  overflow-x: auto;
+  letter-spacing: 1px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  background: #2d2d44;
+  color: #ffffff;
+  border: none;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 18px 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn:hover {
+  background: #3a3a5a;
+  transform: scale(1.03);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.funcao {
+  background: #444466;
+  color: #f5cc50;
+}
+
+.funcao:hover {
+  background: #55557a;
+}
+
+.operador {
+  background: #bc04b4;
+}
+
+.operador:hover {
+  background: #d920d1;
+}
+
+.igual {
+  background: #f5cc50;
+  color: #1e1e2e;
+  font-weight: bold;
+}
+
+.igual:hover {
+  background: #ffd96a;
+}
+
+.zero {
+  grid-column: span 2;
+}
